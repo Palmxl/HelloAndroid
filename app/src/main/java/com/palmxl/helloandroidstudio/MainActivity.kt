@@ -27,6 +27,35 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+        variablesYConstantes()
+    }
+
+    // Variables y contantes: Notacion var
+    private fun variablesYConstantes(){
+
+        // Variables
+        var myFirstVariable = "Hello Palmxl!"
+        println(myFirstVariable)
+
+        var myFirstNumber = 1
+
+        myFirstVariable = "Bienvenidos al tuto"
+        println(myFirstVariable)
+
+        var mySecondVariable = "Si!!!"
+        println(mySecondVariable)
+
+        mySecondVariable = myFirstVariable
+        println(mySecondVariable)
+
+        // Constantes: Notacion val
+
+        val myFirstConstant = "Constante!"
+        println(myFirstConstant)
+
+        val mySecondConstant = myFirstVariable
+        println(mySecondConstant)
+
     }
 }
 
