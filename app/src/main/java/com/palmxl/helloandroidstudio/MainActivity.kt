@@ -27,7 +27,9 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
-        variablesYConstantes()
+
+        // variablesYConstantes() // Lección 1
+        tiposDeDatos()
     }
 
     // Variables y contantes: Notacion var
@@ -56,6 +58,42 @@ class MainActivity : ComponentActivity() {
         val mySecondConstant = myFirstVariable
         println(mySecondConstant)
 
+    }
+
+    // Tipos de datos (Data Types)
+    private fun tiposDeDatos(){
+
+        /* String, Android Studio tiene inferencia de datos
+        *  por lo que no hace falta poner el tipo "String"
+        */
+        val myString: String = "Hola!!"
+        val myString2 = "Hola sin String!!!"
+
+        // Concatenación
+        val myString3 = myString + " " + myString2
+        println(myString3)
+
+        // Enteros (Byte, Short, Int, Long)
+        val myInt: Int = 1
+        val myInt2 = 2
+        // Operación
+        val myInt3 = myInt + myInt2
+        println(myInt3)
+
+        // Decimales (Float, Double)
+        val myFloat: Float = 1.5f
+        val myDouble = 1.5
+        val myDouble2 = 2.6
+        val myDouble3 = 1
+        val myDouble4 = myDouble + myDouble2 + myDouble3
+        println(myDouble4)
+
+        // Boolean (Bool)
+        val myBool: Boolean = true
+        val myBool2 = false
+        // val myBool3 = myBool2 + myBool2 No acepta opereciones
+        println(myBool == myBool2)
+        println(myBool && myBool2)
     }
 }
 
