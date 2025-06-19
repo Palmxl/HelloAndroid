@@ -100,7 +100,7 @@ class MainActivity : ComponentActivity() {
     // Sentencia If
     private fun sentenciaIf(){
 
-        val myNumber = 12
+        val myNumber = 60
 
         // Operadores condicionales
         // > Mayor que
@@ -116,6 +116,26 @@ class MainActivity : ComponentActivity() {
             println("$myNumber es mayor que 10")
         }
 
+        // Operadores lógicos
+        // && operador "y"
+        // || operador "o"
+        // ! operador "no"
+
+        if (myNumber <= 10 && myNumber > 5){
+            println("$myNumber es menor o igual que 10 y mayor que 5")
+        } else {
+            println("$myNumber es mayor que 10 o menor o igual que 5")
+        }
+
+        if (!(myNumber <= 10 && myNumber > 5) || myNumber == 53){
+            println("$myNumber es menor o igual que 10 y mayor que 5 o es igual que 53")
+        } else if(myNumber == 60) {
+            println("$myNumber es igual a 60")
+        } else if (myNumber != 61)
+            println("$myNumber no es igual a 61")
+        else {
+            println("$myNumber es mayor que 10 o menor o igual que 5 y no es igual que 53")
+        }
     }
 }
 
