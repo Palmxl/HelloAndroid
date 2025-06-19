@@ -29,7 +29,8 @@ class MainActivity : ComponentActivity() {
         }
 
         // variablesYConstantes() // Lección 1
-        tiposDeDatos()
+        // tiposDeDatos() // Lección 2
+        sentenciaIf() // Lección 3
     }
 
     // Variables y contantes: Notacion var
@@ -94,6 +95,27 @@ class MainActivity : ComponentActivity() {
         // val myBool3 = myBool2 + myBool2 No acepta opereciones
         println(myBool == myBool2)
         println(myBool && myBool2)
+    }
+
+    // Sentencia If
+    private fun sentenciaIf(){
+
+        val myNumber = 12
+
+        // Operadores condicionales
+        // > Mayor que
+        // < Menor que
+        // >= Mayor o igual que
+        // <= Menor o igual que
+        // == Igualdad
+        // != Desigualdad
+
+        if (myNumber <= 10){
+            println("$myNumber es menor o igual que 10")
+        } else {
+            println("$myNumber es mayor que 10")
+        }
+
     }
 }
 
